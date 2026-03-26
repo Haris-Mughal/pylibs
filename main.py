@@ -1,16 +1,14 @@
-# This is a sample Python script.
+# import tkinter
+# top = tkinter.Tk()
+#
+# top.mainloop()
 
-# Press Ctrl+F5 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# OR
 
+import tkinter as tk
+class App (tk.Tk):
+    def __init__(self):
+        super().__init__()
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press F9 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+app = App()
+app.mainloop()
